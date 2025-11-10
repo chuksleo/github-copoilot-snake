@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+      /* Center the canvas and score on the page */
+      body {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
+        margin: 0; /* Remove default margin */
+        background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+        color: white; /* White text for better contrast */
+        font-family: Arial, sans-serif; /* Modern font */
+      }
+
+      /* Style for the score */
+      #score {
+        color: white; /* White text color */
+        font-size: 24px; /* Larger font size */
+        margin-bottom: 10px; /* Add space below the score */
+        font-family: 'Courier New', Courier, monospace; /* Fancy font */
+        text-shadow: 0 0 10px lime; /* Glowing text effect */
+      }
+
+      /* Style for the canvas */
+      canvas {
+        display: block;
+        background: url('https://source.unsplash.com/400x400/?galaxy') no-repeat center center;
+        background-size: cover; /* Make the image cover the entire canvas */
+        border: 5px solid lime;
+        box-shadow: 0 0 20px lime, 0 0 40px lime;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Div to display the score -->
+    <div id="score">Score: 0</div>
+
+    <!-- Canvas element for the game -->
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <!-- Link to the JavaScript file -->
+    <script src="snake.js"></script>
+  </body>
+  </html>
